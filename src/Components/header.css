@@ -1,0 +1,68 @@
+.Head{
+  height:80px;
+  width:1700px;
+  background-color:black;
+  display: flex;
+  margin:0px;
+  padding:0px;
+  justify-content: space-around;
+}
+.Head img{
+  height:50px;
+  width:120px; 
+  margin-left: 20px;
+  margin-top: 10px;
+  background-color: white;;
+}
+.Hello{
+height:20px;
+width:150px;
+background-color:black;
+margin-left:30px;
+margin-top: 10px;
+color:white;
+font-size:small;
+}
+.Select{
+  height:20px;
+  width:150px;
+background-color:black;
+margin-left:30px;
+color:white;
+font-weight: 900;
+}
+.HeaderSearch{
+  height:50px;
+  /* width:600px; */
+
+  margin-left: 50px;
+  margin-top: 5px;
+  display: flex;
+
+}
+ .search{ 
+  margin-left: 20px;
+}
+.dropdown{ 
+  height:100%;
+  width:60px;
+  background-color:gray;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size:small;
+}
+.navSearch{
+  height:100%;
+  width:40px;
+  background-color:yellow;
+
+}  
+.nav-flag img {
+height:30px;
+width:30px;
+margin: 20px;
+}
+.searchbar{
+width:300px
+}
