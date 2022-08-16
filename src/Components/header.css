@@ -1,11 +1,12 @@
 .Head{
   height:80px;
-  width:1700px;
+  width:100vw;
   background-color:black;
   display: flex;
   margin:0px;
   padding:0px;
   justify-content: space-around;
+  
 }
 .Head img{
   height:50px;
@@ -65,4 +66,21 @@ margin: 20px;
 }
 .searchbar{
 width:300px
+}
+.cartbox{
+  padding: 0px;
+  display: flex;
+  /* background-color: brown; */
+}
+.carttext{
+  /* background-color: aqua; */
+  color: blue;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.number{
+color: red;
+margin-top:20px ;
+text-decoration: none;
 }

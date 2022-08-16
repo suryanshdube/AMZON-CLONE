@@ -1,12 +1,16 @@
 import React from 'react'
 import './Card.css'
 import data from './Object.js'
-export default function Card(){
+export default function Card({inputState}){
+  console.log(inputState.inputState)
+  let filteredData = data.filter(ele=>ele.type.includes(inputState.inputState))
 return(
   <>
   <div className="parent">
     {
- data.map((ele)=> {
+    filteredData.length==0
+
+ ?data.map((ele)=> {
 return(
   <>
   <div className="Card">
@@ -17,12 +21,32 @@ return(
 <div className="Card-Container">
   <div className="details">{ele.type}</div>
   <div className="type">{ele.details}</div>
-  <div className="Price">{ele.Price}</div></div>
-  <button className="Cart">Add to Cart</button>
+  <div className="Price">{ele.Price}</div>
+  <button  className="Cart" onClick={()=>inputState.addToCart(ele)}>Add to Cart</button></div>
   </div>
+  
   </>
 
   );
+ })
+ 
+ :filteredData.map((ele)=>{
+  return(
+    <>
+    <div className="Card">
+    <div className="Image-Container">
+      <img src={ele.image}/>
+  </div>
+  
+  <div className="Card-Container">
+    <div className="details">{ele.type}</div>
+    <div className="type">{ele.details}</div>
+    <div className="Price">{ele.Price}</div>
+    <button className="Cart"  onClick={()=>inputState.addToCart(ele)} >Add to Cart</button></div>
+    </div>
+    </>
+  
+    );
  })
    }
    </div>
